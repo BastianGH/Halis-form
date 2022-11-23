@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire Halis</title>
+</head>
+<body>
+    <main>
+        <section>
+            <img src="img/logo_mobile_header.webp" alt="logo-Halis">
+            <h1>Estimez vos aides en 2 minutes</h1>
+            <p>Testez rapidement votre éligibilité pour nos offres d'isolation.</p>
+            <form action="">
+                <div>
+                    <label for="">1. Vos travaux concernent : </label>
+                    <ul>
+                        <li>
+                            <label for="" class="flex-col">
+                                <img src="img/Maison_black-e1643370356721.webp" alt="maison">
+                                <input type="radio" name="logement" id="maison">
+                                <span>Maison</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="" class="flex-col"> 
+                                <img src="img/Appartement_black.webp" alt="appartement">
+                                <input type="radio" name="logement" id="appartement">
+                                <span>Appartement</span>
+                            </label>
+                        </li>
+                    </ul>                
+                </div>
+                <div>
+                    <label for="">2. De quand date la construction de votre logement ? </label>
+                    <ul>
+                        <li>
+                            <label for="">
+                                <input type="radio" name="age_logement" id="young">
+                                <span>Moins de 2 ans</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="">
+                                <input type="radio" name="age_logement" id="medium">
+                                <span>Entre 2 et 15 ans</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="">
+                                <input type="radio" name="age_logement" id="old">
+                                <span>Plus de 15 ans</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <label for="">3. Surface habitable en m² </label>
+                    <input type="text" placeholder="Choisissez une option">
+                </div>
+                <div>
+                    <label for="">4. Code postal : </label>
+                    <input type="text" placeholder="69800">
+                </div>
+                <div>
+                    <label for="">5. Quelle est l'énergie de chauffage de votre logement ? </label>
+                    <ul>
+                        <li>
+                            <label for="" class="flex-col">
+                                <img src="img/Fioul_black.webp" alt="fuel">
+                                <input type="radio" name="chauffage_logement" id="fuel">
+                                <span>Chauffage au Fuel</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="" class="flex-col">
+                                <img src="img/Electrique_black.webp" alt="electrique">
+                                <input type="radio" name="chauffage_logement" id="electrique">
+                                <span>Chauffage Electrique</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="" class="flex-col">
+                                <img src="img/Gas_Black.webp" alt="gaz">
+                                <input type="radio" name="chauffage_logement" id="gaz">
+                                <span>Chauffage au Gaz</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="" class="flex-col">
+                                <img src="img/Bois_black.webp" alt="bois">
+                                <input type="radio" name="chauffage_logement" id="bois">
+                                <span>Chauffage au Bois / à Granulés</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="" class="flex-col">
+                                <img src="img/Pompe_black.webp" alt="pompe">
+                                <input type="radio" name="chauffage_logement" id="pompe">
+                                <span>Pompe à chaleur</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <label for="">6. Quels travaux souhaitez vous réaliser ? </label>
+                    <ul>
+                        <li>
+                            <label for="" class="flex-col">
+                                <img src="img/façade_black.webp" alt="façade">
+                                <input type="radio" name="travaux_logement" id="façade">
+                                <span>Ravalement de façade</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="" class="flex-col">
+                                <img src="img/Ventilation_black.webp" alt="ventilation">
+                                <input type="radio" name="travaux_logement" id="ventilation">
+                                <span>Ventilation</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="" class="flex-col">
+                                <img src="img/Chauffage_black.webp" alt="chauffage">
+                                <input type="radio" name="travaux_logement" id="chauffage">
+                                <span>Chauffage</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <label for="">7. Ou en êtes vous dans votre projet ? </label>
+                    <ul>
+                        <li>
+                            <label for="">
+                                <input type="radio" name="travaux_logement" id="façade">
+                                <span>Je réfléchis à mes travaux</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="">
+                                <input type="radio" name="travaux_logement" id="ventilation">
+                                <span>Je vais signer mon devis</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="">
+                                <input type="radio" name="travaux_logement" id="chauffage">
+                                <span>J'ai déja signer mon devis</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <label for="">8. Combien de personnes êtes vous dans votre foyer ? </label>
+                    <input type="range" min="0" max="15">
+                </div>
+                <div>
+                    <label for="">9. Vous êtes : </label>
+                    <ul>
+                        <li>
+                            <label for="">
+                                <input type="radio" name="client" id="proprietaire_occupant">
+                                <span>Propriétaire occupant</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="">
+                                <input type="radio" name="client" id="proprietaire_secondaire">
+                                <span>Propriétaire d'une résidence secondaire</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="">
+                                <input type="radio" name="client" id="proprietaire_bailleur">
+                                <span>Propriétaire bailleur</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="">
+                                <input type="radio" name="client" id="locataire">
+                                <span>Locataire</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <label for="">10. À combien s'élève le revenu total de votre foyer fiscal ? </label>
+                    <input type="text" placeholder="Choisissez une option">
+                </div>
+                <div>
+                    <label for="">11. Civilité </label>
+                    <ul>
+                        <li>
+                            <label for="" class="flex-col">
+                                <img src="img/Madam_black.webp" alt="femme">
+                                <input type="radio" name="civilité" id="madame">
+                                <span>Madame</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="" class="flex-col">
+                                <img src="img/Monsieur_black.webp" alt="homme">
+                                <input type="radio" name="civilité" id="monsieur">
+                                <span>Monsieur</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <label for="">12. Nom et Prénom </label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">13. Numéro de téléphone </label>
+                    <input type="tel">
+                </div>
+                <div>
+                    <label for="">14. Adresse email </label>
+                    <input type="email">
+                </div>
+                <input type="submit" value="Soumettre" id="button">
+            </form>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
