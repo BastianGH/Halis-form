@@ -13,6 +13,7 @@ section {
     align-items: center;
     width: 60%;
     margin: 0 auto;
+    background-color: #feffff;
 }
 h1 {
     font-size: 45px;
@@ -27,6 +28,7 @@ div > label {
     font-size: 25px;
     font-weight: 400;
     display: flex;
+    position: relative;
 }
 div > input {
     width: 100%;
@@ -46,13 +48,66 @@ label span {
     font-size: 17px;
     font-weight: 400;
 }
+div input[type="radio"] {
+    display: none;
+}
+div input[type="radio"]:checked + label {
+    border: #80bade 1px solid;
+}
 li label {
     background-color: #f9fcfe;
-    border: 1px solid #8ed1fc;
     border-radius: 5px;
     padding: 10px;
     display: block;
     width: 100%;
+}
+li:nth-child(1) label::before {
+    content: "A";
+}
+li:nth-child(2) label::before {
+    content: "B";
+}
+li:nth-child(3) label::before {
+    content: "C";
+}
+li:nth-child(4) label::before {
+    content: "D";
+}
+li:nth-child(5) label::before {
+    content: "E";
+}
+li:nth-child(6) label::before {
+    content: "F";
+}
+label::before {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px #80bade solid ;
+    padding: 2px 0px 0px;
+    border-radius: 5px;
+}
+input[type="radio"]:checked + label::before {
+    color: white;
+    border: 1px white solid;
+    background-color: #80bade;
+    transition: all 400ms ease-in-out;
+}
+label + select {
+    margin: 15px 0 0 30px;
+    width: 100%;
+    padding: 20px 50px;
+    background-color: #f8fcfe;
+    border: 0;
+    font-size: 30px;
+    opacity: 0.5;
+}
+label + select option {
+    background-color: #f2f8fc;
+    color: #0a7abf;
+    border: 1px solid #0a7abf;
+    border-radius: 5px;
 }
 div {
     margin-top: 100px;
